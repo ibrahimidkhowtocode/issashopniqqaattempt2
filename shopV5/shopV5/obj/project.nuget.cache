@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OxPknmEcL5Q=",
+  "dgSpecHash": "EKtiaV9Fzk8=",
   "success": true,
   "projectFilePath": "C:\\Users\\dadyyy\\source\\repos\\shopV5\\shopV5\\shopV5.vbproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\dadyyy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\dadyyy\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\dadyyy\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\dadyyy\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\dadyyy\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\dadyyy\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
     "C:\\Users\\dadyyy\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",

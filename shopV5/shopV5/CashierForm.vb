@@ -1,31 +1,61 @@
 ﻿Public Class CashierForm
+    Private WithEvents TabControl1 As New TabControl With {.Dock = DockStyle.Fill}
+    Private shoppingCart As New List(Of Product)
+    Private debtRecords As New List(Of DebtRecord)
+
     Private Sub CashierForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dgvProducts.DataSource = DataModule.StockTable
-        dgvCart.DataSource = DataModule.SalesTable
+        Me.Controls.Add(TabControl1)
+        SetupTabs()
     End Sub
 
-    Private Sub BtnScan_Click(sender As Object, e As EventArgs) Handles btnScan.Click
-        Using captureForm As New CameraCaptureForm()
-            AddHandler captureForm.BarcodeScanned, Sub(barcode)
-                                                       Me.Invoke(Sub() ProcessBarcode(barcode))
-                                                   End Sub
-            captureForm.ShowDialog()
-        End Using
+    Private Sub SetupTabs()
+        TabControl1.TabPages.Clear()
+
+        ' Sales Tab
+        Dim salesTab As New TabPage("Sales")
+        SetupSalesTab(salesTab)
+        TabControl1.TabPages.Add(salesTab)
+
+        ' Debt Tab
+        Dim debtTab As New TabPage("Debt")
+        SetupDebtTab(debtTab)
+        TabControl1.TabPages.Add(debtTab)
     End Sub
 
-    Private Sub ProcessBarcode(barcode As String)
-        Dim product = DataModule.StockTable.Rows.Find(barcode)
-        If product IsNot Nothing Then
-            DataModule.SalesTable.Rows.Add(
-                Guid.NewGuid(),
-                DateTime.Now,
-                product("Barcode"),
-                1,
-                product("Price")
-            )
-            DataModule.LogAction("Cashier", "Sale Recorded", $"Barcode: {barcode}")
-        Else
-            MessageBox.Show("Product not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    Private Sub SetupSalesTab(tab As TabPage)
+        ' ... (existing sales implementation)
+    End Sub
+
+    Private Sub SetupDebtTab(tab As TabPage)
+        Dim dgvDebt As New DataGridView With {.Dock = DockStyle.Fill}
+        ' ... (add columns)
+
+        Dim btnAddPayment As New Button With {.Text = "Record Payment", .Top = 310}
+        AddHandler btnAddPayment.Click, Sub(s, ev) AddPayment(dgvDebt)
+
+        tab.Controls.AddRange({dgvDebt, btnAddPayment})
+        RefreshDebtGrid(dgvDebt)
+    End Sub
+
+    Private Sub RefreshDebtGrid(dgv As DataGridView)
+        dgv.Rows.Clear()
+        For Each debt In debtRecords
+            dgv.Rows.Add(debt.Id, debt.CustomerName, debt.Amount,
+                         debt.AmountPaid, debt.Balance, debt.DateIncurred,
+                         If(debt.IsFullyPaid, "Paid", "Pending"))
+        Next
+    End Sub
+
+    Private Sub AddPayment(dgv As DataGridView)
+        If dgv.SelectedRows.Count = 0 Then Return
+
+        Dim selectedId = CInt(dgv.SelectedRows(0).Cells("Id").Value)
+        Dim debt = debtRecords.FirstOrDefault(Function(d) d.Id = selectedId)
+
+        If debt IsNot Nothing Then
+            ' Show payment form
+            ' ... (implementation)
+            RefreshDebtGrid(dgv)
         End If
     End Sub
 End Class
