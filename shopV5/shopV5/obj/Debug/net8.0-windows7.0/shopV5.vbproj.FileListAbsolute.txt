@@ -1,0 +1,10 @@
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.vbproj.AssemblyReference.cache
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.AdminForm.resources
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.CameraCaptureForm.resources
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.CashierForm.resources
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.Form1.resources
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.vbproj.GenerateResource.cache
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.AssemblyInfoInputs.cache
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.AssemblyInfo.vb
+C:\Users\dadyyy\source\repos\shopV5\shopV5\obj\Debug\net8.0-windows7.0\shopV5.vbproj.CoreCompileInputs.cache
