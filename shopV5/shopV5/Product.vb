@@ -1,5 +1,4 @@
-﻿<Serializable()>
-Public Class Product
+﻿Public Class Product
     Public Property Id As Integer
     Public Property Name As String
     Public Property Price As Decimal

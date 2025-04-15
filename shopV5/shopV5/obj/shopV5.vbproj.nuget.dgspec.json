@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dadyyy\\source\\repos\\shopV5\\shopV5\\shopV5.vbproj": {}
+    "C:\\Users\\dadyyy\\Desktop\\newest\\shopV5\\shopV5\\shopV5.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\dadyyy\\source\\repos\\shopV5\\shopV5\\shopV5.vbproj": {
+    "C:\\Users\\dadyyy\\Desktop\\newest\\shopV5\\shopV5\\shopV5.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dadyyy\\source\\repos\\shopV5\\shopV5\\shopV5.vbproj",
+        "projectUniqueName": "C:\\Users\\dadyyy\\Desktop\\newest\\shopV5\\shopV5\\shopV5.vbproj",
         "projectName": "shopV5",
-        "projectPath": "C:\\Users\\dadyyy\\source\\repos\\shopV5\\shopV5\\shopV5.vbproj",
+        "projectPath": "C:\\Users\\dadyyy\\Desktop\\newest\\shopV5\\shopV5\\shopV5.vbproj",
         "packagesPath": "C:\\Users\\dadyyy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dadyyy\\source\\repos\\shopV5\\shopV5\\obj\\",
+        "outputPath": "C:\\Users\\dadyyy\\Desktop\\newest\\shopV5\\shopV5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
